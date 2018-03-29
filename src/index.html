@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页-home</title>
+    <link type="text/css" rel="stylesheet" href="style/home.css">
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="script/all.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="center">
+            <h1>我的Angular测试案例版本首页</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="center" ng-app="registApp" ng-controller="registController">
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" ng-model="user.name" placeholder="请输入用户名"></td>
+                    <td>{{user.nameMsg}}</td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password" ng-model="user.pwd" placeholder="请输入密码"></td>
+                    <td>{{user.pwdMsg}}</td>
+                </tr>
+                <tr>
+                    <td>重复密码：</td>
+                    <td><input type="password" ng-model="user.repwd" placeholder="请再次确认密码"></td>
+                    <td>{{user.repwdMsg}}</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button type="submit" ng-click="registEvent()">确认注册</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

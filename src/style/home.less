@@ -1,0 +1,34 @@
+@import "_attribute.less";
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width:100%;
+  height:@headHeight;
+  .center{
+    width:@frameWidth;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: @headHeight;
+    color: red;
+  }
+}
+.content{
+  width: 100%;
+  height: @ctMinHeight;
+  .center{
+    width: @frameWidth;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    table{
+      margin: 0 auto;
+      text-align: center;
+      tr{
+        height: 50px;
+      }
+    }
+  }
+}
